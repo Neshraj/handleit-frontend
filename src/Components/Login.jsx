@@ -150,6 +150,8 @@ function Login(){
                     <button className="sinupbtn logitms" id='msingbtn' onClick={login}>Signin or Signup</button>
                     </div>
 
+                    <button id="adlgbtn" onClick={()=>navigate('/adminlogin')}>Admin Login</button>
+
                 </div>
             </div>
 
