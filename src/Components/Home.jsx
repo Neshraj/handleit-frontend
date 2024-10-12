@@ -39,7 +39,7 @@ function Home(){
         event.returnValue = '';
     });
     
-    const mainServerUrl ="https://handleitserver.onrender.com/";
+    const mainServerUrl ="https://handleit-server.onrender.com/";
 
       function showup() {
         document.getElementById('form').style.display='none';
@@ -88,7 +88,7 @@ function Home(){
             posts.style.display = 'flex';
             notify('Please wait', 'i');
             try {
-              const response = await fetch(`https://handleitserver.onrender.com/getposts?userid=${rollnumber}`, {
+              const response = await fetch(`https://handleit-server.onrender.com/getposts?userid=${rollnumber}`, {
                   method: 'GET',
                   headers: {
                       'Content-Type': 'application/json'
@@ -221,7 +221,7 @@ function Home(){
     
 
         try {
-            const response = await fetch('https://handleitserver.onrender.com/uploadimages', {
+            const response = await fetch('https://handleit-server.onrender.com/uploadimages', {
                 method: 'POST',
                 body: formData
             });
@@ -276,7 +276,7 @@ function Home(){
   
 
       try {
-          const response = await fetch('https://handleitserver.onrender.com/uploadimages', {
+          const response = await fetch('https://handleit-server.onrender.com/uploadimages', {
               method: 'POST',
               body: formData
           });
@@ -470,7 +470,7 @@ function Home(){
                         <p>Uploaded At: {new Date(post.uploadedAt).toLocaleString()}</p>
                         <div className="imgbtndiv">
                         <img 
-                          src={`https://handleitserver.onrender.com/getimage/${post.fileName}`} 
+                          src={`https://handleit-server.onrender.com/getimage/${post.fileName}`} 
                           alt={`Post ${index + 1}`} 
                           style={{ maxWidth: '200px', margin: '10px 0' }} 
                         />

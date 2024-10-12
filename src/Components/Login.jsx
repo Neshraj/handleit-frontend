@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 function Login(){
 
     const navigate = useNavigate();
-    const mainServerUrl ="https://handleitserver.onrender.com/";
+    const mainServerUrl ="https://handleit-server.onrender.com/";
 
     function togglePasswordVisibility() {
         var passwordInput = document.getElementById("password");
