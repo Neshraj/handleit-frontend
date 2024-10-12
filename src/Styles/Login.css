@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box; /* Add this for better layout control */
+    transition: 0.2s;
+}
+
+
+
+#loginmain {
+    background-image: url('../../public/assets/masterbackroung.avif');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Add padding to prevent overflow on smaller screens */
+}
+
+/* Headings */
+#loginmain h1 {
+    color: rgb(94, 164, 204);
+    text-shadow: 2px 2px 5px #000;
+    font-size: 2rem; /* Relative font size */
+}
+
+#loginbox {
+    border: 0;
+    padding: 15px;
+    width: 90vw; /* Adjust for smaller screens */
+    max-width: 500px; /* Set a max-width for larger screens */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.137);
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    box-shadow: 4px 3px 10px #000000;
+    transition: all 0.3s ease-in-out; /* Smooth transitions for responsiveness */
+}
+
+#loginbox h1 {
+    text-align: center;
+    color: rgb(94, 164, 204);
+    text-shadow: 2px 2px 5px #000;
+    font-size: 1.8rem; /* Make font size responsive */
+}
+
+#logininbtn {
+    display: flex;
+    width: 100%;
+    max-width: 200px; /* Maintain button width limits */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input and buttons */
+.logitms {
+    
+    max-width: 350px; /* Limit the width of input elements */
+    font-weight: bolder;
+    padding: 10px;
+    box-shadow: 4px 3px 10px #000000;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+}
+
+.sinupbtn {
+    width: 100vw;
+    max-width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sapp {
+    position: relative;
+}
+
+#show-password-btn2 {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-weight: lighter !important;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    /* Tablet and smaller screens */
+    #loginbox {
+        width: 80vw;
+        height: auto;
+        padding: 10px;
+    }
+
+    #loginbox h1 {
+        font-size: 1.5rem;
+    }
+
+    .logitms {
+        padding: 8px;
+    }
+
+    #logininbtn {
+        width: 100%;
+        max-width: 180px;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile devices */
+    #loginmain h1 {
+        font-size: 1.4rem;
+    }
+
+    #loginbox {
+        width: 95vw;
+        padding: 5px;
+    }
+
+    #loginbox h1 {
+        font-size: 1.2rem;
+    }
+
+    .logitms {
+        padding: 7px;
+    }
+
+    #logininbtn {
+        max-width: 150px;
+    }
+}

@@ -1,3 +1,6 @@
+*{
+  transition: 0.2s;
+}
 .App {
   text-align: center;
 }

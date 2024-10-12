@@ -1,0 +1,924 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+}
+
+#homemain{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-color: rgb(199, 196, 255);
+    
+}
+
+#homeside{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 150px;
+    height: 100vh;
+    background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+  background-size: 40px 60px;
+  box-shadow: 4px 1px 5px #000000;
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+#homecenter{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-image: url('../../public/assets/back.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#sidetop{
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    justify-content:space-around;
+    align-items: center;
+    gap: 10px;
+    
+
+}
+
+#sidebottom{
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    gap: 30px;
+    
+    
+}
+
+#centertop{
+    color: rgb(148, 142, 255);
+    text-shadow: 1px 1px 2px #000;
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: end;
+    background-color: rgb(232, 232, 232);
+    font-size: large;
+    box-shadow: 4px 1px 5px #000000;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 85vw;
+    text-align: center;
+}
+
+
+
+#centerbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    height: 85vh;
+    /* background-color: rgba(255, 255, 255, 0.137); */
+    /* backdrop-filter: blur(1px); */
+    border-radius: 15px;
+    /* box-shadow: 4px 3px 10px #150a0a; */
+    outline: 0;
+    font-size: large;
+    padding: 10px;
+    border: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #000;
+    
+}
+
+
+#form,#posts{
+  display: none;
+  position: absolute;
+  width: 50vw;
+  height: 70vh;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+      background-size: 40px 60px;
+
+
+
+  box-shadow: 4px 3px 10px #150a0a;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#addpost{
+  display: none;
+  position: absolute;
+  width: 50vw;
+  height: 70vh;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+      background-size: 40px 60px;
+
+
+
+  box-shadow: 4px 3px 10px #150a0a;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+#posts{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  color: rgb(130, 124, 255);
+  width: 70vw;
+  height: 80vh;
+  overflow-y: auto;
+  z-index: 1;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+      background-size: 40px 60px;
+
+
+
+  box-shadow: 4px 3px 10px #150a0a;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#posts h1{
+  color: rgb(255, 255, 255);
+}
+
+
+#addpost{
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  width: 70vw;
+  height: 80vh;
+  overflow-y: auto;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+      background-size: 40px 60px;
+
+
+
+  box-shadow: 4px 3px 10px #150a0a;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#addpost h3{
+  color: rgb(130, 124, 255);
+  font-weight: bolder;
+  text-shadow: 1px 2px 2px #000000;
+}
+
+
+#form h3{
+  color: rgb(130, 124, 255);
+  font-weight: bolder;
+  text-shadow: 1px 2px 2px #000000;
+}
+
+.formitem{
+    max-width: 350px; /* Limit the width of input elements */
+    width: 300px;
+    font-weight: bolder;
+    padding: 10px;
+    box-shadow: 1px 2px 6px rgb(0, 0, 0);
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+}
+
+.formitem:hover{
+  background-color: rgb(207, 203, 248);
+}
+
+#fsubbtn:active{
+  background-color: rgb(171, 165, 255);
+}
+
+#previmg{
+  margin-left: -160px;
+  border: 0px;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+
+}
+
+
+#preview,#preview1{
+  display: none;
+  position: absolute;
+  top: 0px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.137);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+  box-shadow: 4px 3px 10px #150a0a;
+  width: 50vw;
+  height: 70vh;
+}
+
+#prevcls,#prevcls1{
+  border: 0px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.opbtn {
+    width: 6em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge rgb(108,99,255);
+    outline: none;
+    background-color: transparent;
+    color: rgb(197, 194, 248);
+    transition: 0.2s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+  
+  .opbtn::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: rgb(40,40,40);
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .opbtn::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: rgb(40,40,40);
+    transition: 0.5s;
+  }
+  
+  .opbtn:hover::before, .opbtn:hover::after {
+    transform: scale(0)
+  }
+  
+  .opbtn:hover {
+    box-shadow: inset 0px 0px 25px rgb(108,99,255);
+  }
+
+
+
+
+  
+.logoutbtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 4px 1px 5px #000000;
+    background-color: rgb(108,99,255);
+  }
+  
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+ 
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  
+  .logoutbtn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .logoutbtn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  
+  .logoutbtn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  
+  .logoutbtn:active {
+    transform: translate(2px ,2px);
+  }
+
+
+
+#profilepic{
+    background-image: url('../../public/assets/profile.svg');
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    box-shadow: 4px 1px 5px #000000;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+
+  #profilepic:hover {
+    animation: shake 0.5s ease-in-out;
+  }
+
+
+  #savefile{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+  background-size: 40px 60px;
+  box-shadow: 4px 1px 5px #000000;
+  padding: 20px;
+  flex-direction: row;
+  gap: 10px;
+  box-shadow: 4px 3px 10px #000000;
+    border-radius: 10px;
+
+  }
+
+  .filename{
+    border:0;
+    outline-offset: 0;
+    font-weight: bolder;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(206, 203, 255);
+    border-radius: 10px;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .sobtn{
+    border:0;
+    outline-offset: 0;
+    font-weight: bolder;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(206, 203, 255);
+    border-radius: 10px;
+    outline: 0;
+    cursor: pointer;
+    color: rgb(126, 119, 255);
+    margin: 0 5px;
+  }
+
+
+  #opendelfile{
+    display: none;
+    position: absolute;
+    overflow-y: auto;
+    top: 20%;
+    left: 20%;
+    height: 55vh;
+    flex-direction: column;
+    top: 100px;
+    left: 200px;
+    background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+  background-size: 40px 60px;
+  box-shadow: 4px 1px 5px #000000;
+  padding: 20px;
+  box-shadow: 4px 3px 10px #000000;
+    border-radius: 10px;
+    gap: 20px;
+
+
+    
+  }
+
+  .oplit{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgb(206, 203, 255);
+    margin: 10px 0px;
+    border-radius: 10px;
+    color: rgb(126, 119, 255);
+
+  }
+
+  #opendelfile span{
+    color: rgb(126, 119, 255);
+    font-weight: bold;
+    font-size: large;
+    text-shadow: 1px 1px 1px rgb(206, 203, 255);
+  }
+
+  #updatedet{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+    background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+  background-size: 40px 60px;
+  box-shadow: 4px 1px 5px #000000;
+  padding: 20px;
+  box-shadow: 4px 3px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+  #updatedet h2{
+    color: rgb(206, 203, 255);
+    text-shadow: 1px 2px 4px #000;
+  }
+
+  .upipt{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border:0;
+    outline-offset: 0;
+    font-weight: bolder;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    outline: 0;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  .upipt:hover{
+    box-shadow: 2px 2px 5px rgb(113, 106, 255);
+  }
+
+  .imgbtndiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pdelbtn{
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 100px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bolder;
+    padding: 2px;
+    box-shadow: 2px 2px 2px #000;
+    }
+
+    .pdelbtn:hover{
+      background-color: rgb(113, 106, 255);
+    }
+
+
